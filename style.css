@@ -8,6 +8,7 @@ body {
     background-color: rgba(0, 140, 255, 0.8);
     overflow: hidden;
     border-radius: 20px;
+    position: fixed;
 }
 .navigation a {
     color: rgb(23, 0, 44);
@@ -46,4 +47,9 @@ footer {
 footer p {
     color: #7300ff;
     font-size: 26;
+}
+
+iframe {
+    width: 560;
+    height: 315;
 }
