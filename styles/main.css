@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Playwrite+US+Modern:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Merienda:wght@300..900&family=Pacifico&family=Playwrite+US+Modern:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+body {
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navigation {
+    background-color: rgba(0, 140, 255, 0.8);
+    overflow: hidden;
+    border-radius: 20px;
+    position: fixed;
+}
+.navigation a {
+    color: rgb(23, 0, 44);
+    float: left;
+    font-size: 26px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 15px;
+    font-family: "Chicle";
+}
+
+.navigation a:hover {
+    background-color: rgb(23, 0, 44);
+    color: #7300ff;
+}
+
+.contents {
+    padding: 20px 350px;
+    background-color: rgba(221, 240, 255, 0.4);
+    border-radius: 20px;
+}
+
+.contents p {
+    font-family: "Merienda";
+    font-size: 18px;
+    color: rgb(23, 0, 44);
+}
+
+.contents a {
+    font-family: fantasy;
+    font-size: 22px;
+    color: lightseagreen;
+}
+
+.contents h1 {
+    font-family: monospace;
+    font-size: 36px;
+}
+
+footer {
+    background-color: rgb(23, 0, 44);
+    border-radius: 20px;
+    padding: 15px 15px;
+}
+
+footer p {
+    color: #7300ff;
+    font-size: 26;
+    font-family: monospace;
+}
+
+iframe {
+    width: 560;
+    height: 315;
+    align-self: center;
+} /* Make a class for video iframes */
+
+code {
+    background-color: rgba(105, 105, 105, 0.3);
+}
+
+code-block {
+    color: rgb(136, 0, 181);
+    font-size: 18;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+codezone {
+    background-color: rgba(23, 0, 44, 0.3);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5%;
+}
