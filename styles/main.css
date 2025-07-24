@@ -46,7 +46,7 @@ body {
 .contents a {
     font-family: fantasy;
     font-size: 22px;
-    color: lightseagreen;
+    color: rgb(0, 255, 242);
 }
 
 .contents h1 {
@@ -73,19 +73,19 @@ iframe {
 } /* Make a class for video iframes */
 
 code {
-    background-color: rgba(105, 105, 105, 0.3);
+    background-color: rgba(105, 105, 105, 0.7);
+    border-radius: 0.25em;
+    padding: 0.2em;
 }
 
-code-block {
-    color: rgb(136, 0, 181);
-    font-size: 18;
-    font-family: monospace;
+.codezone {
+    background-color: rgba(23, 0, 44, 0.7);
+    border-radius: 0.35em;
     white-space: pre-wrap;
+    padding: 0.25em;
 }
 
-codezone {
-    background-color: rgba(23, 0, 44, 0.3);
-    width: fit-content;
-    height: fit-content;
-    border-radius: 5%;
+.codezone p {
+    font-family: monospace;
+    color: rgb(167, 167, 255);
 }

@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link rel="icon" href="../../assets/icon.png">
+    <title>/setblock - Command Basics | TheKnytemayor</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="../../script.js"></script>
+    <div class="navigation">
+      <a href="../../index.html"><strong>TheKnytemayor</strong></a>
+      <a href="../../videos.html">Videos</a>
+      <a href="../../tutorials.html"><strong><u>TUTORIAL - /setblock</u></strong></a>
+      <a href="../../dead_end.html">Challenges</a>
+    </div>
+    <br><br>
+  <div class="contents">
+    <h1 style="padding-left:15px;color:#ff9900">Command Basics - /setblock</h1>
+   <p>The /setblock command has 2, 3 or 4 paramaters. The first paramater is the <code>position</code>. Learn more about positions <a href="../core_concepts/positions.html">here</a>. The second is the <code>block</code> you want to place. After that is the method. The method is optional, and can be 'keep', 'replace', 'strict' or 'destroy'. Let's go over each of the methods.</p><br>
+   <p>The <code>replace</code> method / No method:</p>
+   <div class="codezone"><p>/setblock ~ ~2 ~ minecraft:tuff_bricks</p></div>
+   <p>This places tuff bricks 2 blocks above the execution location regardless of what block is present there, and will cause block updates if certain blocks are already around it (eg. still water realising there is space to flow, stairs changing shape).</p><br>
+   <p>The <code>keep</code> method:</p>
+   <div class="codezone"><p>/setblock ~ ~2 ~ minecraft:tuff_bricks keep</p></div>
+   <p>Probably the most boring one of all of them. I'll say it now to get it over with. The <code>keep</code> method will place the tuff bricks only if air is in the target location. Any other block present, and it will fail to set the block. The block update rule from above applies here.</p><br>
+   <p>The <code>strict</code> method:</p>
+   <div class="codezone"><p>/setblock ~ ~2 ~ minecraft:tuff_bricks replace</p></div>
+   <p>This method is rather exciting for some datapack developers. The <code>strict</code> method acts the same as <code>replace</code>, except that it does not cause any block updates! This is a relatively new feature (since 1.21.5).</p><br>
+   <p>The <code>destroy</code> method:</p>
+   <div class="codezone"><p>/setblock ~ ~2 ~ minecraft:tuff_bricks destroy</p></div>
+   <p>Now for the final method, <code>destroy</code>. Another branch of the <code>replace</code> method, though the difference is that it breaks the block that was previously there, and drops the item of that block.</p><br>
+   <p>Now that you know about the methods, it's only a matter of time until I make my tutorial about the /fill command and block states. See you there!</p>
+  </div>
+  <footer>
+      <p>
+        My username and profile online are not associated with Mojang or Microsoft in any way.
+      </p>
+      <p>
+        © 2025 Waedyth (TheKnytemayor)
+      </p>
+      <p>
+        I do not allow any individual or buisness to steal my content for any purpose, especially in AI training data. I do not accept any sponsorship deals in any form; ie. video, written, orally, etc.
+      </p>
+    </footer>
+  </body>
+</html>
