@@ -38,7 +38,7 @@ body {
 }
 
 .contents {
-    padding: 20px 350px;
+    padding: 3dvh 3dvh;
     background-color: rgba(221, 240, 255, 0.4);
     border-radius: 20px;
 }
