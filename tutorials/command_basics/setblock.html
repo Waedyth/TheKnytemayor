@@ -8,14 +8,15 @@
     <script src="../../script.js"></script>
     <div class="navigation">
       <a href="../../index.html"><strong>TheKnytemayor</strong></a>
-      <a href="../../videos.html">Videos</a>
+      <a href="../../creations.html">Creations</a>
       <a href="../../tutorials.html"><strong><u>TUTORIAL - /setblock</u></strong></a>
       <a href="../../dead_end.html">Challenges</a>
+      <a href="write.html">Write</a>
     </div>
     <br><br>
   <div class="contents">
-    <h1 style="padding-left:15px;color:#ff9900">Command Basics - /setblock</h1>
-   <p>The /setblock command has 2, 3 or 4 paramaters. The first paramater is the <code>position</code>. Learn more about positions <a href="../core_concepts/positions.html">here</a>. The second is the <code>block</code> you want to place. After that is the method. The method is optional, and can be 'keep', 'replace', 'strict' or 'destroy'. Let's go over each of the methods.</p><br>
+    <h1 style="padding-left:15px;color:var(--theme-purple)">Command Basics - /setblock</h1>
+   <p>The /setblock command has 2-3 paramaters. The first paramater is the <code>position</code>. Learn more about positions <a href="../core_concepts/positions.html">here</a>. The second is the <code>block</code> you want to place. After that is the method. The method is optional, and can be 'keep', 'replace', 'strict' or 'destroy'. Let's go over each of the methods.</p><br>
    <p>The <code>replace</code> method / No method:</p>
    <div class="codezone"><p>/setblock ~ ~2 ~ minecraft:tuff_bricks</p></div>
    <p>This places tuff bricks 2 blocks above the execution location regardless of what block is present there, and will cause block updates if certain blocks are already around it (eg. still water realising there is space to flow, stairs changing shape).</p><br>
@@ -23,7 +24,7 @@
    <div class="codezone"><p>/setblock ~ ~2 ~ minecraft:tuff_bricks keep</p></div>
    <p>Probably the most boring one of all of them. I'll say it now to get it over with. The <code>keep</code> method will place the tuff bricks only if air is in the target location. Any other block present, and it will fail to set the block. The block update rule from above applies here.</p><br>
    <p>The <code>strict</code> method:</p>
-   <div class="codezone"><p>/setblock ~ ~2 ~ minecraft:tuff_bricks replace</p></div>
+   <div class="codezone"><p>/setblock ~ ~2 ~ minecraft:tuff_bricks strict</p></div>
    <p>This method is rather exciting for some datapack developers. The <code>strict</code> method acts the same as <code>replace</code>, except that it does not cause any block updates! This is a relatively new feature (since 1.21.5).</p><br>
    <p>The <code>destroy</code> method:</p>
    <div class="codezone"><p>/setblock ~ ~2 ~ minecraft:tuff_bricks destroy</p></div>

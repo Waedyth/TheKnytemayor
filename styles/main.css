@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Playwrite+US+Modern:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chicle&family=Merienda:wght@300..900&family=Pacifico&family=Playwrite+US+Modern:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-
+:root {
+    --theme-purple: #7300ff;
+    --theme-dark: rgb(23, 0, 44);
+    --theme-dark-transparency: rgba(23, 0, 44, 0.7);
+    --theme-light: rgb(167, 167, 255);
+}
 
 body {
     background-image: url("../assets/background.png");
@@ -17,7 +23,7 @@ body {
     position: fixed;
 }
 .navigation a {
-    color: rgb(23, 0, 44);
+    color: var(--theme-dark);
     float: left;
     font-size: 26px;
     text-decoration: none;
@@ -27,8 +33,8 @@ body {
 }
 
 .navigation a:hover {
-    background-color: rgb(23, 0, 44);
-    color: #7300ff;
+    background-color: rgba(0, 103, 187, 0.8);
+    color: var(--theme-purple);
 }
 
 .contents {
@@ -40,12 +46,12 @@ body {
 .contents p {
     font-family: "Merienda";
     font-size: 18px;
-    color: rgb(23, 0, 44);
+    color: var(--theme-dark);
 }
 
 .contents a {
-    font-family: fantasy;
-    font-size: 22px;
+    font-family: 'Merienda';
+    font-size: 18px;
     color: rgb(0, 255, 242);
 }
 
@@ -55,13 +61,13 @@ body {
 }
 
 footer {
-    background-color: rgb(23, 0, 44);
+    background-color: var(--theme-dark);
     border-radius: 20px;
     padding: 15px 15px;
 }
 
 footer p {
-    color: #7300ff;
+    color: var(--theme-purple);
     font-size: 26;
     font-family: monospace;
 }
@@ -79,7 +85,7 @@ code {
 }
 
 .codezone {
-    background-color: rgba(23, 0, 44, 0.7);
+    background-color: var(--theme-dark-transparency);
     border-radius: 0.35em;
     white-space: pre-wrap;
     padding: 0.25em;
@@ -87,5 +93,20 @@ code {
 
 .codezone p {
     font-family: monospace;
-    color: rgb(167, 167, 255);
+    color: var(--theme-light);
+}
+
+#free-writing-zone {
+    background-color: black;
+    border: none;
+    outline: none;
+    font-size: 18;
+    font-family: 'JetBrains Mono';
+    width: 100%;
+    height: 75%;
+    border-radius: 1em;
+    padding: 1em;
+    color: aqua;
+    resize: none;
+    tab-size: 4;
 }

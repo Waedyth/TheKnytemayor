@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="icon" href="../../assets/icon.png">
+    <title>/give - Command Basics | TheKnytemayor</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="../../script.js"></script>
+    <div class="navigation">
+      <a href="../../index.html"><strong>TheKnytemayor</strong></a>
+      <a href="../../creations.html">Creations</a>
+      <a href="../../tutorials.html"><strong><u>CONCEPT - Positions</u></strong></a>
+      <a href="../../dead_end.html">Challenges</a>
+      <a href="write.html">Write</a>
+    </div>
+    <br><br>
+  <div class="contents">
+    <h1 style="padding-left:15px;color:var(--theme-purple)">Command Basics - /give</h1>
+    <p>A position is any location within a Minecraft world. They define the locations for all of the entities, blocks and game events. They can be one of 3 types. <code>world</code>, <code>relative</code> or <code>local</code>. Let's make one of our own, and for simplicity, we'll have it be a <code>world</code> position.</p><br>
+    <div class="codezone"><p>10 5 15</p></div><br>
+    <p>"Okay, that was very simple!" Exactly. That's what I was going for. However, I have not told you what the three numbers do. The first number is the <code>x</code> coordinate. This is how far along the <code>x</code> axis the subject is in blocks (I will refer to the measurement as <code>bl</code> on this site). The second number is the <code>y</code> coordinate. That's how far the subject is vertically, in blocks as well. The third number is the same as the last two, but in the <code>z</code> axis. You may have guessed it, it's called the <code>z</code> coordinate.</p><br>
+    <p>Now with this knowledge, let's come up with another position. This time, let's make it <code>relative</code>.</p><br>
+    <div class="codezone"><p>~-24765 ~63 ~157</p></div><br>
+    <p>Here, the offset is the same for each coordinate, but now the position is relative to the target. Let's try <code>local</code> now.</p><br>
+    <div class="codezone"><p>^3 ^2 ^5</p></div><br>
+    <p><code>local</code> is quite different to the other two types of position. This one has 3 values much like the others, but their meaning is different. The first value is not how far away the subject is in the <code>x</code> axis, but despite it being called <code>x rotation</code>, it is the rotation from the 'eye' mark on the entity's hitbox (or directionality of the block, or north if the <code>facing</code> block state does not exist) towards the left (anti-clockwise if observed from above).</p><br>
+    <p>If you need further help, head to the <a href="https://minecraft.wiki/">Minecraft Wiki</a>.</p>
+  </div>
+  <footer>
+      <p>
+        My username and profile online are not associated with Mojang or Microsoft in any way.
+      </p>
+      <p>
+        © 2025 Waedyth (TheKnytemayor)
+      </p>
+      <p>
+        I do not allow any individual or buisness to steal my content for any purpose, especially in AI training data. I do not accept any sponsorship deals in any form; ie. video, written, orally, etc.
+      </p>
+    </footer>
+  </body>
+</html>
