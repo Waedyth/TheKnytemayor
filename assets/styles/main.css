@@ -7,10 +7,11 @@
     --theme-dark: rgb(23, 0, 44);
     --theme-dark-transparency: rgba(23, 0, 44, 0.7);
     --theme-light: rgb(167, 167, 255);
+    --selection-colour: #3324ff;
 }
 
 body {
-    background-image: url("../assets/background.png");
+    background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -30,11 +31,11 @@ body {
     text-align: center;
     padding: 15px 15px;
     font-family: "Chicle";
+    transition: color 0.5s ease-in-out;
 }
 
 .navigation a:hover {
-    background-color: rgba(0, 103, 187, 0.8);
-    color: var(--theme-purple);
+    color: var(--selection-colour);
 }
 
 .contents {
@@ -50,9 +51,9 @@ body {
 }
 
 .contents a {
-    font-family: 'Merienda';
+    font-family: monospace;
     font-size: 18px;
-    color: rgb(0, 255, 242);
+    color: rgb(0, 140, 255);
 }
 
 .contents h1 {
@@ -79,7 +80,7 @@ iframe {
 } /* Make a class for video iframes */
 
 code {
-    background-color: rgba(105, 105, 105, 0.7);
+    background-color: rgba(119, 163, 190, 0.5);
     border-radius: 0.25em;
     padding: 0.2em;
 }
@@ -96,7 +97,7 @@ code {
     color: var(--theme-light);
 }
 
-#free-writing-zone {
+#writing-zone {
     background-color: black;
     border: none;
     outline: none;
