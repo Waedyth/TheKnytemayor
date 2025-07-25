@@ -1,4 +1,4 @@
-let FreeWritingZone = document.getElementById('free-writing-zone');
+let FreeWritingZone = document.getElementById('writing-zone');
 FreeWritingZone.addEventListener('keydown', function(event) {
     if (event.key == 'Tab') {
         event.preventDefault();
